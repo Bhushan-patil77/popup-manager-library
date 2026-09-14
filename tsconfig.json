@@ -11,6 +11,9 @@
     "skipLibCheck": true,
     "isolatedModules": true,
     "experimentalDecorators": true,
+    "paths": {
+      "popup-manager": ["./dist/popup-manager"]
+    },
     "importHelpers": true,
     "target": "ES2022",
     "module": "preserve"
@@ -28,6 +31,12 @@
     },
     {
       "path": "./tsconfig.spec.json"
+    },
+    {
+      "path": "./projects/popup-manager/tsconfig.lib.json"
+    },
+    {
+      "path": "./projects/popup-manager/tsconfig.spec.json"
     }
   ]
 }

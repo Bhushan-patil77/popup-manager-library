@@ -2,7 +2,8 @@
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
   "version": 1,
   "cli": {
-    "packageManager": "npm"
+    "packageManager": "npm",
+    "analytics": false
   },
   "newProjectRoot": "projects",
   "projects": {
@@ -24,9 +25,7 @@
                 "input": "public"
               }
             ],
-            "styles": [
-              "src/styles.css"
-            ]
+            "styles": ["src/styles.css"]
           },
           "configurations": {
             "production": {
@@ -66,6 +65,32 @@
         },
         "test": {
           "builder": "@angular/build:unit-test"
+        }
+      }
+    },
+    "popup-manager": {
+      "projectType": "library",
+      "root": "projects/popup-manager",
+      "sourceRoot": "projects/popup-manager/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular/build:ng-packagr",
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/popup-manager/tsconfig.lib.prod.json"
+            },
+            "development": {
+              "tsConfig": "projects/popup-manager/tsconfig.lib.json"
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "test": {
+          "builder": "@angular/build:unit-test",
+          "options": {
+            "tsConfig": "projects/popup-manager/tsconfig.spec.json"
+          }
         }
       }
     }

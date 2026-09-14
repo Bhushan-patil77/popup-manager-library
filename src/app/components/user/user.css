@@ -1,0 +1,337 @@
+.show{
+    display: block;
+}
+
+.hide{
+   display: none;
+}
+
+/* .userPopup{
+    position: absolute;
+} */
+
+
+/* ========================================
+   1. FADE
+   ======================================== */
+
+.popup-fade-enter {
+  animation: popupFadeIn 0.2s ease-out forwards;
+}
+
+.popup-fade-leave {
+  animation: popupFadeOut 0.15s ease-in forwards;
+}
+
+/* ========================================
+   2. SLIDE DOWN
+   ======================================== */
+
+.popup-slide-down-enter {
+  animation: popupSlideDownIn 0.25s ease-out forwards;
+}
+
+.popup-slide-down-leave {
+  animation: popupSlideDownOut 0.2s ease-in forwards;
+}
+
+/* ========================================
+   3. SLIDE UP
+   ======================================== */
+
+.popup-slide-up-enter {
+  animation: popupSlideUpIn 0.25s ease-out forwards;
+}
+
+.popup-slide-up-leave {
+  animation: popupSlideUpOut 0.2s ease-in forwards;
+}
+
+/* ========================================
+   4. SLIDE LEFT
+   ======================================== */
+
+.popup-slide-left-enter {
+  animation: popupSlideLeftIn 0.25s ease-out forwards;
+}
+
+.popup-slide-left-leave {
+  animation: popupSlideLeftOut 0.2s ease-in forwards;
+}
+
+/* ========================================
+   5. SLIDE RIGHT
+   ======================================== */
+
+.popup-slide-right-enter {
+  animation: popupSlideRightIn 0.25s ease-out forwards;
+}
+
+.popup-slide-right-leave {
+  animation: popupSlideRightOut 0.2s ease-in forwards;
+}
+
+/* ========================================
+   6. SCALE
+   ======================================== */
+
+.popup-scale-enter {
+  animation: popupScaleIn 0.2s ease-out forwards;
+}
+
+.popup-scale-leave {
+  animation: popupScaleOut 0.15s ease-in forwards;
+}
+
+/* ========================================
+   7. SCALE + SLIDE
+   ======================================== */
+
+.popup-scale-slide-enter {
+  animation: popupScaleSlideIn 0.2s ease-out forwards;
+}
+
+.popup-scale-slide-leave {
+  animation: popupScaleSlideOut 0.15s ease-in forwards;
+}
+
+/* ========================================
+   8. ZOOM
+   ======================================== */
+
+.popup-zoom-enter {
+  animation: popupZoomIn 0.2s ease-out forwards;
+}
+
+.popup-zoom-leave {
+  animation: popupZoomOut 0.15s ease-in forwards;
+}
+
+@keyframes popupFadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes popupFadeOut {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+  }
+}
+
+
+
+
+@keyframes popupSlideDownIn {
+  from {
+    opacity: 0;
+    transform: translateY(-12px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes popupSlideDownOut {
+  from {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  to {
+    opacity: 0;
+    transform: translateY(-12px);
+  }
+}
+
+
+
+
+@keyframes popupSlideUpIn {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes popupSlideUpOut {
+  from {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  to {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+}
+
+
+
+
+@keyframes popupSlideLeftIn {
+  from {
+    opacity: 0;
+    transform: translateX(15px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes popupSlideLeftOut {
+  from {
+    opacity: 1;
+    transform: translateX(0);
+  }
+
+  to {
+    opacity: 0;
+    transform: translateX(15px);
+  }
+}
+
+
+
+
+@keyframes popupSlideRightIn {
+  from {
+    opacity: 0;
+    transform: translateX(-15px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes popupSlideRightOut {
+  from {
+    opacity: 1;
+    transform: translateX(0);
+  }
+
+  to {
+    opacity: 0;
+    transform: translateX(-15px);
+  }
+}
+
+
+
+
+@keyframes popupScaleIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes popupScaleOut {
+  from {
+    opacity: 1;
+    transform: scale(1);
+  }
+
+  to {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+}
+
+
+
+
+@keyframes popupScaleSlideIn {
+  from {
+    opacity: 0;
+    transform: translateY(-6px) scale(0.98);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+@keyframes popupScaleSlideOut {
+  from {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+
+  to {
+    opacity: 0;
+    transform: translateY(-6px) scale(0.98);
+  }
+}
+
+
+
+
+@keyframes popupZoomIn {
+  from {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes popupZoomOut {
+  from {
+    opacity: 1;
+    transform: scale(1);
+  }
+
+  to {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+/* user popup specific css */
+
+
+/* .userPopup{
+  width: 200px;
+  height: 200px;
+  border: 1px solid black;
+} */
+
